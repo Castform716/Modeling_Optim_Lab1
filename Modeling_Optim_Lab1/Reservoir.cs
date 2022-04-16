@@ -39,6 +39,7 @@ namespace Modeling_Optim_Lab1
             Block = new ComplexBlock();
 
             Block.Add(new IntegrBlock(dt));
+            Block.Add(xLimit);
         }
 
         public void SetParams(double x1, double x2, double x3)
