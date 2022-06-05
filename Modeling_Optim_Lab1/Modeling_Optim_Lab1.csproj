@@ -52,8 +52,11 @@
     <Compile Include="Block\DelayBlock.cs" />
     <Compile Include="Block\GainBlock.cs" />
     <Compile Include="Block\IntegrBlock.cs" />
+    <Compile Include="Block\IntLimBlock.cs" />
     <Compile Include="Block\LimitBlock.cs" />
     <Compile Include="Block\NoiseBlock.cs" />
+    <Compile Include="Block\Overseer.cs" />
+    <Compile Include="Block\PIDBlock.cs" />
     <Compile Include="MainChart.cs">
       <SubType>Form</SubType>
     </Compile>

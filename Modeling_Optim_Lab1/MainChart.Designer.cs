@@ -30,12 +30,13 @@ namespace Modeling_Optim_Lab1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainChart));
             this.ObjectChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ObjectPic = new System.Windows.Forms.PictureBox();
@@ -65,38 +66,60 @@ namespace Modeling_Optim_Lab1
             this.tbDT = new System.Windows.Forms.TextBox();
             this.lbY = new System.Windows.Forms.Label();
             this.lbYNum = new System.Windows.Forms.Label();
+            this.btnManualAuto = new System.Windows.Forms.Button();
+            this.lbSetPoint = new System.Windows.Forms.Label();
+            this.tbSetPoint = new System.Windows.Forms.TextBox();
+            this.btnSetPointRight = new System.Windows.Forms.Button();
+            this.btnSetPointLeft = new System.Windows.Forms.Button();
+            this.tbTi = new System.Windows.Forms.TextBox();
+            this.btnTiRight = new System.Windows.Forms.Button();
+            this.btnTiLeft = new System.Windows.Forms.Button();
+            this.lbTi = new System.Windows.Forms.Label();
+            this.tbTD = new System.Windows.Forms.TextBox();
+            this.btnTDRight = new System.Windows.Forms.Button();
+            this.btnTDLeft = new System.Windows.Forms.Button();
+            this.lbTD = new System.Windows.Forms.Label();
+            this.tbKPID = new System.Windows.Forms.TextBox();
+            this.btnKPidRight = new System.Windows.Forms.Button();
+            this.btnKpidLeft = new System.Windows.Forms.Button();
+            this.lbKPid = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ObjectChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ObjectPic)).BeginInit();
             this.SuspendLayout();
             // 
             // ObjectChart
             // 
-            chartArea3.Name = "ChartArea1";
-            this.ObjectChart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.ObjectChart.Legends.Add(legend3);
+            chartArea4.Name = "ChartArea1";
+            this.ObjectChart.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.ObjectChart.Legends.Add(legend4);
             this.ObjectChart.Location = new System.Drawing.Point(579, 26);
             this.ObjectChart.Name = "ObjectChart";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.Name = "Y";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Legend = "Legend1";
-            series10.Name = "X1";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Legend = "Legend1";
-            series11.Name = "X2";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series12.Legend = "Legend1";
-            series12.Name = "X3";
-            this.ObjectChart.Series.Add(series9);
-            this.ObjectChart.Series.Add(series10);
-            this.ObjectChart.Series.Add(series11);
-            this.ObjectChart.Series.Add(series12);
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series16.Legend = "Legend1";
+            series16.Name = "Y";
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series17.Legend = "Legend1";
+            series17.Name = "X1";
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series18.Legend = "Legend1";
+            series18.Name = "X2";
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series19.Legend = "Legend1";
+            series19.Name = "X3";
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series20.Legend = "Legend1";
+            series20.Name = "U";
+            this.ObjectChart.Series.Add(series16);
+            this.ObjectChart.Series.Add(series17);
+            this.ObjectChart.Series.Add(series18);
+            this.ObjectChart.Series.Add(series19);
+            this.ObjectChart.Series.Add(series20);
             this.ObjectChart.Size = new System.Drawing.Size(735, 557);
             this.ObjectChart.TabIndex = 0;
             this.ObjectChart.Text = "ObjectChart";
@@ -107,7 +130,7 @@ namespace Modeling_Optim_Lab1
             this.ObjectPic.Image = ((System.Drawing.Image)(resources.GetObject("ObjectPic.Image")));
             this.ObjectPic.Location = new System.Drawing.Point(12, 200);
             this.ObjectPic.Name = "ObjectPic";
-            this.ObjectPic.Size = new System.Drawing.Size(532, 383);
+            this.ObjectPic.Size = new System.Drawing.Size(532, 335);
             this.ObjectPic.TabIndex = 1;
             this.ObjectPic.TabStop = false;
             // 
@@ -234,9 +257,9 @@ namespace Modeling_Optim_Lab1
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnStart.Location = new System.Drawing.Point(24, 26);
+            this.btnStart.Location = new System.Drawing.Point(12, 545);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(194, 56);
+            this.btnStart.Size = new System.Drawing.Size(178, 38);
             this.btnStart.TabIndex = 14;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -245,9 +268,9 @@ namespace Modeling_Optim_Lab1
             // btnStop
             // 
             this.btnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnStop.Location = new System.Drawing.Point(24, 106);
+            this.btnStop.Location = new System.Drawing.Point(385, 545);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(194, 56);
+            this.btnStop.Size = new System.Drawing.Size(159, 38);
             this.btnStop.TabIndex = 15;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
@@ -255,7 +278,7 @@ namespace Modeling_Optim_Lab1
             // 
             // tbK1
             // 
-            this.tbK1.Location = new System.Drawing.Point(467, 56);
+            this.tbK1.Location = new System.Drawing.Point(527, 56);
             this.tbK1.Name = "tbK1";
             this.tbK1.Size = new System.Drawing.Size(46, 20);
             this.tbK1.TabIndex = 16;
@@ -263,7 +286,7 @@ namespace Modeling_Optim_Lab1
             // 
             // tbK2
             // 
-            this.tbK2.Location = new System.Drawing.Point(467, 82);
+            this.tbK2.Location = new System.Drawing.Point(527, 82);
             this.tbK2.Name = "tbK2";
             this.tbK2.Size = new System.Drawing.Size(46, 20);
             this.tbK2.TabIndex = 17;
@@ -271,7 +294,7 @@ namespace Modeling_Optim_Lab1
             // 
             // tbK3
             // 
-            this.tbK3.Location = new System.Drawing.Point(467, 108);
+            this.tbK3.Location = new System.Drawing.Point(527, 108);
             this.tbK3.Name = "tbK3";
             this.tbK3.Size = new System.Drawing.Size(46, 20);
             this.tbK3.TabIndex = 18;
@@ -281,7 +304,7 @@ namespace Modeling_Optim_Lab1
             // 
             this.lbKParam.AutoSize = true;
             this.lbKParam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbKParam.Location = new System.Drawing.Point(440, 26);
+            this.lbKParam.Location = new System.Drawing.Point(469, 24);
             this.lbKParam.Name = "lbKParam";
             this.lbKParam.Size = new System.Drawing.Size(104, 20);
             this.lbKParam.TabIndex = 19;
@@ -291,7 +314,7 @@ namespace Modeling_Optim_Lab1
             // 
             this.lbK1.AutoSize = true;
             this.lbK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbK1.Location = new System.Drawing.Point(416, 56);
+            this.lbK1.Location = new System.Drawing.Point(476, 56);
             this.lbK1.Name = "lbK1";
             this.lbK1.Size = new System.Drawing.Size(33, 20);
             this.lbK1.TabIndex = 20;
@@ -301,7 +324,7 @@ namespace Modeling_Optim_Lab1
             // 
             this.lbK2.AutoSize = true;
             this.lbK2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbK2.Location = new System.Drawing.Point(416, 82);
+            this.lbK2.Location = new System.Drawing.Point(476, 82);
             this.lbK2.Name = "lbK2";
             this.lbK2.Size = new System.Drawing.Size(33, 20);
             this.lbK2.TabIndex = 21;
@@ -311,7 +334,7 @@ namespace Modeling_Optim_Lab1
             // 
             this.lbK3.AutoSize = true;
             this.lbK3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbK3.Location = new System.Drawing.Point(416, 106);
+            this.lbK3.Location = new System.Drawing.Point(476, 106);
             this.lbK3.Name = "lbK3";
             this.lbK3.Size = new System.Drawing.Size(33, 20);
             this.lbK3.TabIndex = 22;
@@ -321,7 +344,7 @@ namespace Modeling_Optim_Lab1
             // 
             this.lbDT.AutoSize = true;
             this.lbDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbDT.Location = new System.Drawing.Point(365, 142);
+            this.lbDT.Location = new System.Drawing.Point(425, 142);
             this.lbDT.Name = "lbDT";
             this.lbDT.Size = new System.Drawing.Size(84, 20);
             this.lbDT.TabIndex = 23;
@@ -329,7 +352,7 @@ namespace Modeling_Optim_Lab1
             // 
             // tbDT
             // 
-            this.tbDT.Location = new System.Drawing.Point(467, 142);
+            this.tbDT.Location = new System.Drawing.Point(527, 142);
             this.tbDT.Name = "tbDT";
             this.tbDT.Size = new System.Drawing.Size(46, 20);
             this.tbDT.TabIndex = 24;
@@ -339,7 +362,7 @@ namespace Modeling_Optim_Lab1
             // 
             this.lbY.AutoSize = true;
             this.lbY.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbY.Location = new System.Drawing.Point(425, 170);
+            this.lbY.Location = new System.Drawing.Point(485, 170);
             this.lbY.Name = "lbY";
             this.lbY.Size = new System.Drawing.Size(24, 20);
             this.lbY.TabIndex = 25;
@@ -349,12 +372,169 @@ namespace Modeling_Optim_Lab1
             // 
             this.lbYNum.AutoSize = true;
             this.lbYNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbYNum.Location = new System.Drawing.Point(471, 170);
+            this.lbYNum.Location = new System.Drawing.Point(531, 170);
             this.lbYNum.Name = "lbYNum";
             this.lbYNum.Size = new System.Drawing.Size(27, 20);
             this.lbYNum.TabIndex = 26;
             this.lbYNum.Text = "__";
             this.lbYNum.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnManualAuto
+            // 
+            this.btnManualAuto.Location = new System.Drawing.Point(359, 26);
+            this.btnManualAuto.Name = "btnManualAuto";
+            this.btnManualAuto.Size = new System.Drawing.Size(75, 20);
+            this.btnManualAuto.TabIndex = 27;
+            this.btnManualAuto.Text = "Automatic";
+            this.btnManualAuto.UseVisualStyleBackColor = true;
+            this.btnManualAuto.Click += new System.EventHandler(this.btnManualAuto_Click);
+            // 
+            // lbSetPoint
+            // 
+            this.lbSetPoint.AutoSize = true;
+            this.lbSetPoint.Location = new System.Drawing.Point(77, 26);
+            this.lbSetPoint.Name = "lbSetPoint";
+            this.lbSetPoint.Size = new System.Drawing.Size(50, 13);
+            this.lbSetPoint.TabIndex = 28;
+            this.lbSetPoint.Text = "Set Point";
+            // 
+            // tbSetPoint
+            // 
+            this.tbSetPoint.Location = new System.Drawing.Point(80, 42);
+            this.tbSetPoint.Name = "tbSetPoint";
+            this.tbSetPoint.Size = new System.Drawing.Size(46, 20);
+            this.tbSetPoint.TabIndex = 31;
+            // 
+            // btnSetPointRight
+            // 
+            this.btnSetPointRight.Location = new System.Drawing.Point(132, 38);
+            this.btnSetPointRight.Name = "btnSetPointRight";
+            this.btnSetPointRight.Size = new System.Drawing.Size(27, 26);
+            this.btnSetPointRight.TabIndex = 30;
+            this.btnSetPointRight.Text = ">";
+            this.btnSetPointRight.UseVisualStyleBackColor = true;
+            this.btnSetPointRight.Click += new System.EventHandler(this.btnSetPointRight_Click);
+            // 
+            // btnSetPointLeft
+            // 
+            this.btnSetPointLeft.Location = new System.Drawing.Point(47, 38);
+            this.btnSetPointLeft.Name = "btnSetPointLeft";
+            this.btnSetPointLeft.Size = new System.Drawing.Size(27, 26);
+            this.btnSetPointLeft.TabIndex = 29;
+            this.btnSetPointLeft.Text = "<";
+            this.btnSetPointLeft.UseVisualStyleBackColor = true;
+            this.btnSetPointLeft.Click += new System.EventHandler(this.btnSetPointLeft_Click);
+            // 
+            // tbTi
+            // 
+            this.tbTi.Location = new System.Drawing.Point(80, 84);
+            this.tbTi.Name = "tbTi";
+            this.tbTi.Size = new System.Drawing.Size(46, 20);
+            this.tbTi.TabIndex = 35;
+            this.tbTi.TextChanged += new System.EventHandler(this.tbTi_TextChanged);
+            // 
+            // btnTiRight
+            // 
+            this.btnTiRight.Location = new System.Drawing.Point(132, 80);
+            this.btnTiRight.Name = "btnTiRight";
+            this.btnTiRight.Size = new System.Drawing.Size(27, 26);
+            this.btnTiRight.TabIndex = 34;
+            this.btnTiRight.Text = ">";
+            this.btnTiRight.UseVisualStyleBackColor = true;
+            this.btnTiRight.Click += new System.EventHandler(this.btnTiRight_Click);
+            // 
+            // btnTiLeft
+            // 
+            this.btnTiLeft.Location = new System.Drawing.Point(47, 80);
+            this.btnTiLeft.Name = "btnTiLeft";
+            this.btnTiLeft.Size = new System.Drawing.Size(27, 26);
+            this.btnTiLeft.TabIndex = 33;
+            this.btnTiLeft.Text = "<";
+            this.btnTiLeft.UseVisualStyleBackColor = true;
+            this.btnTiLeft.Click += new System.EventHandler(this.btnTiLeft_Click);
+            // 
+            // lbTi
+            // 
+            this.lbTi.AutoSize = true;
+            this.lbTi.Location = new System.Drawing.Point(96, 68);
+            this.lbTi.Name = "lbTi";
+            this.lbTi.Size = new System.Drawing.Size(16, 13);
+            this.lbTi.TabIndex = 32;
+            this.lbTi.Text = "Ti";
+            // 
+            // tbTD
+            // 
+            this.tbTD.Location = new System.Drawing.Point(81, 131);
+            this.tbTD.Name = "tbTD";
+            this.tbTD.Size = new System.Drawing.Size(46, 20);
+            this.tbTD.TabIndex = 39;
+            // 
+            // btnTDRight
+            // 
+            this.btnTDRight.Location = new System.Drawing.Point(133, 127);
+            this.btnTDRight.Name = "btnTDRight";
+            this.btnTDRight.Size = new System.Drawing.Size(27, 26);
+            this.btnTDRight.TabIndex = 38;
+            this.btnTDRight.Text = ">";
+            this.btnTDRight.UseVisualStyleBackColor = true;
+            this.btnTDRight.Click += new System.EventHandler(this.btnTDRight_Click);
+            // 
+            // btnTDLeft
+            // 
+            this.btnTDLeft.Location = new System.Drawing.Point(48, 127);
+            this.btnTDLeft.Name = "btnTDLeft";
+            this.btnTDLeft.Size = new System.Drawing.Size(27, 26);
+            this.btnTDLeft.TabIndex = 37;
+            this.btnTDLeft.Text = "<";
+            this.btnTDLeft.UseVisualStyleBackColor = true;
+            this.btnTDLeft.Click += new System.EventHandler(this.btnTDLeft_Click);
+            // 
+            // lbTD
+            // 
+            this.lbTD.AutoSize = true;
+            this.lbTD.Location = new System.Drawing.Point(96, 111);
+            this.lbTD.Name = "lbTD";
+            this.lbTD.Size = new System.Drawing.Size(20, 13);
+            this.lbTD.TabIndex = 36;
+            this.lbTD.Text = "Td";
+            this.lbTD.Click += new System.EventHandler(this.lbTD_Click);
+            // 
+            // tbKPID
+            // 
+            this.tbKPID.Location = new System.Drawing.Point(81, 174);
+            this.tbKPID.Name = "tbKPID";
+            this.tbKPID.Size = new System.Drawing.Size(46, 20);
+            this.tbKPID.TabIndex = 43;
+            this.tbKPID.TextChanged += new System.EventHandler(this.tbKPID_TextChanged);
+            // 
+            // btnKPidRight
+            // 
+            this.btnKPidRight.Location = new System.Drawing.Point(133, 170);
+            this.btnKPidRight.Name = "btnKPidRight";
+            this.btnKPidRight.Size = new System.Drawing.Size(27, 26);
+            this.btnKPidRight.TabIndex = 42;
+            this.btnKPidRight.Text = ">";
+            this.btnKPidRight.UseVisualStyleBackColor = true;
+            this.btnKPidRight.Click += new System.EventHandler(this.btnKPidRight_Click);
+            // 
+            // btnKpidLeft
+            // 
+            this.btnKpidLeft.Location = new System.Drawing.Point(48, 170);
+            this.btnKpidLeft.Name = "btnKpidLeft";
+            this.btnKpidLeft.Size = new System.Drawing.Size(27, 26);
+            this.btnKpidLeft.TabIndex = 41;
+            this.btnKpidLeft.Text = "<";
+            this.btnKpidLeft.UseVisualStyleBackColor = true;
+            this.btnKpidLeft.Click += new System.EventHandler(this.btnKpidLeft_Click);
+            // 
+            // lbKPid
+            // 
+            this.lbKPid.AutoSize = true;
+            this.lbKPid.Location = new System.Drawing.Point(91, 154);
+            this.lbKPid.Name = "lbKPid";
+            this.lbKPid.Size = new System.Drawing.Size(35, 13);
+            this.lbKPid.TabIndex = 40;
+            this.lbKPid.Text = "PID K";
             // 
             // MainChart
             // 
@@ -362,6 +542,23 @@ namespace Modeling_Optim_Lab1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1326, 595);
+            this.Controls.Add(this.tbKPID);
+            this.Controls.Add(this.btnKPidRight);
+            this.Controls.Add(this.btnKpidLeft);
+            this.Controls.Add(this.lbKPid);
+            this.Controls.Add(this.tbTD);
+            this.Controls.Add(this.btnTDRight);
+            this.Controls.Add(this.btnTDLeft);
+            this.Controls.Add(this.lbTD);
+            this.Controls.Add(this.tbTi);
+            this.Controls.Add(this.btnTiRight);
+            this.Controls.Add(this.btnTiLeft);
+            this.Controls.Add(this.lbTi);
+            this.Controls.Add(this.tbSetPoint);
+            this.Controls.Add(this.btnSetPointRight);
+            this.Controls.Add(this.btnSetPointLeft);
+            this.Controls.Add(this.lbSetPoint);
+            this.Controls.Add(this.btnManualAuto);
             this.Controls.Add(this.lbYNum);
             this.Controls.Add(this.lbY);
             this.Controls.Add(this.tbDT);
@@ -391,6 +588,7 @@ namespace Modeling_Optim_Lab1
             this.Controls.Add(this.ObjectChart);
             this.Name = "MainChart";
             this.Text = "MainChart";
+            this.Load += new System.EventHandler(this.MainChart_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.ObjectChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ObjectPic)).EndInit();
             this.ResumeLayout(false);
@@ -428,6 +626,23 @@ namespace Modeling_Optim_Lab1
         private System.Windows.Forms.TextBox tbDT;
         private System.Windows.Forms.Label lbY;
         private System.Windows.Forms.Label lbYNum;
+        private System.Windows.Forms.Button btnManualAuto;
+        private System.Windows.Forms.Label lbSetPoint;
+        private System.Windows.Forms.TextBox tbSetPoint;
+        private System.Windows.Forms.Button btnSetPointRight;
+        private System.Windows.Forms.Button btnSetPointLeft;
+        private System.Windows.Forms.TextBox tbTi;
+        private System.Windows.Forms.Button btnTiRight;
+        private System.Windows.Forms.Button btnTiLeft;
+        private System.Windows.Forms.Label lbTi;
+        private System.Windows.Forms.TextBox tbTD;
+        private System.Windows.Forms.Button btnTDRight;
+        private System.Windows.Forms.Button btnTDLeft;
+        private System.Windows.Forms.Label lbTD;
+        private System.Windows.Forms.TextBox tbKPID;
+        private System.Windows.Forms.Button btnKPidRight;
+        private System.Windows.Forms.Button btnKpidLeft;
+        private System.Windows.Forms.Label lbKPid;
     }
 }
 

@@ -27,8 +27,7 @@ namespace Modeling_Optim_Lab1
 
             Block = new ComplexBlock();
 
-            Block.Add(new IntegrBlock(dt));
-            Block.Add(xLimit);
+            Block.Add(new IntLimBlock(dt, 0, 100));
         }
         public Reservoir(double dt, double x1, double x2, double x3)
         {
@@ -38,8 +37,7 @@ namespace Modeling_Optim_Lab1
             kxOut2 = new GainBlock(x3);
             Block = new ComplexBlock();
 
-            Block.Add(new IntegrBlock(dt));
-            Block.Add(xLimit);
+            Block.Add(new IntLimBlock(dt, 0, 100));
         }
 
         public void SetParams(double x1, double x2, double x3)
